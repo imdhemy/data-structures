@@ -10,6 +10,6 @@ A data structure (DS) is a way of organizing data so that it can be used effecti
 - They help to manage and organize data.
 - They make code cleaner and easier to understand.
 
-<h2 name="abstract-data-types">Abstract Data types (ADT)</h2>
+<h2 id="abstract-data-types">Abstract Data types (ADT)</h2>
 - An abstract data type (ADT) is an abstraction of data structure (DS) which provides only the interface to which a data structure must adhere to.
 - The interface does not give any specific details about how something should be implemented or in what programming language.
