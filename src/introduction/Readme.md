@@ -1,6 +1,6 @@
 # Introduction to Data Structures
 - [Definition](#definition)
-- [Whe Data Structures?](#why-data-structures)
+- [Why Data Structures?](#why-data-structures)
 - [Abstract Data types (ADT)](#abstract-data-types-adt)
 
 ## Definition
