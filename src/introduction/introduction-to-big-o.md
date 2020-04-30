@@ -33,17 +33,18 @@ Let f be a function that describes the running time of a particular algorithm fo
 <details>
 <summary>Run in constant time: O(1)</summary>
 <p>
+
 ```
 a := 1
 b := 2
 c := a + 5 * b
 ```
-</p>
-<p>
+
 ```
 i := 0
 while 1 < 11 Do
   i = i + 1
 ```
+
 </p>
 </details>
