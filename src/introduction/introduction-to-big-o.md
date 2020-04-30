@@ -42,9 +42,47 @@ c := a + 5 * b
 
 ```
 i := 0
-while 1 < 11 Do
+while 1 < 11
   i = i + 1
 ```
 
 </p>
 </details>
+
+<details>
+<summary>Run in linear time: O(n)</summary>
+<p>
+
+```
+i := 0
+while i < n
+  i = i + 1
+```
+```
+i := 0
+while i < n
+  i = i + 3
+```
+</p>
+</details>
+
+<details>
+<summary>Run in quadratic time O(n<sup>2</sup>)</summary>
+<p>
+
+```
+for(i := 0; i < n; i = i + 1)
+  for(j := 0; j < n; j = j + 1)
+```
+```
+for(i := 0; i < n; i = i + 1)
+  for(j := i; j < n; j = j + 1)
+```
+</p>
+</details>
+
+### Extra notes
+- Finding all subsets of a set: O(2<sup>n</sup>)
+- Finding all permutations of a string: O(n!)
+- Sorting using merge-sort: O(nLog(n))
+- Iterating over all the cells in a matrix of size n by m: O(nm)
