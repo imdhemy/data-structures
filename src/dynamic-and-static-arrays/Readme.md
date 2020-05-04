@@ -1,3 +1,8 @@
+<style type="text/css">
+  .error{
+    color: red
+  }
+</style>
 # Dynamic And Static Arrays
 
 - [Discussion and Examples about arrays](#discussion-and-examples-about-arrays)
@@ -31,14 +36,23 @@
 | **Dynamic Array**| O(1) | O(n) | O(n) | O(1) | O(n) |
 
 #### Static Array
-**A = **
 
-+----+----+----+----+---+---+---+---+-----+
-| 44 | 12 | -5 | 17 | 6 | 0 | 3 | 9 | 100 |
-+----+----+----+----+---+---+---+---+-----+
-| 0  | 1  | 2  | 3  | 4 | 5 | 6 | 7 | 8   |
-+----+----+----+----+---+---+---+---+-----+
+```
+    ╔════╦════╦════╦════╦═══╦═══╦═══╦═══╦═════╗
+    ║ 44 ║ 12 ║ -5 ║ 17 ║ 6 ║ 0 ║ 3 ║ 9 ║ 100 ║
+A = ╠════╬════╬════╬════╬═══╬═══╬═══╬═══╬═════╣
+    ║ 0  ║ 1  ║ 2  ║ 3  ║ 4 ║ 5 ║ 6 ║ 7 ║ 8   ║
+    ╚════╩════╩════╩════╩═══╩═══╩═══╩═══╩═════╝
+```
 
+Elements in A are referenced by their index. There is no other way to access elements in an array. 
+Array indexing is **zero-based**, meaning the first element is found position zero.
+
+- A[0] => 44
+- A[1] => 12
+- A[4] => 6
+- A[7] => 9
+- A[9] => <span class="error">index out of bounds!</span>
 
 ### Static array usage example
 
