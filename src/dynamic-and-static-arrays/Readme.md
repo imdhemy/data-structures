@@ -44,13 +44,11 @@ Elements in A are referenced by their index. There is no other way to access ele
 Array indexing is **zero-based**, meaning the first element is found position zero.
 
 ```diff
-+ 
-A[0] => 44
-A[1] => 12
-A[4] => 6
-A[7] => 9
-- 
-A[9] => index out of bounds!
++ A[0] => 44
++ A[1] => 12
++ A[4] => 6
++ A[7] => 9
+- A[9] => index out of bounds!
 ```
 
 ### Static array usage example
