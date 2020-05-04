@@ -9,8 +9,7 @@
   * [What is a Dynamic Array?](#what-is-a-dynamic-array)
     + [Q: How can we implement a dynamic array?](#q-how-can-we-implement-a-dynamic-array)
     + [Dynamic Array Example](#dynamic-array-example)
-  * [Dynamic Array implementation details](#dynamic-array-implementation-details)
-  * [Code Implementation](#code-implementation)
+  * [Dynamic Array Code](#dynamic-array-code)
 ---
 ## Discussion and Examples about arrays
 ### When and Where is an Array used?
@@ -108,5 +107,6 @@ A.remove(4) A = ║ 34 ║ -7 ║ 4 ║
 ╚═══╩════╩═══╩════╩═══╩════╩═══╩═══╝
 ```
 
-## Dynamic Array implementation details
-## Code Implementation
+## Dynamic Array Code
+- [Array.java](Array.java)
+- [ArrayTest.java](../../tests/dynamic_and_static_arrays/ArrayTest.java)
