@@ -2,22 +2,17 @@
 
 - [Dynamic And Static Arrays](#dynamic-and-static-arrays)
   * [Discussion and Examples about arrays](#discussion-and-examples-about-arrays)
-    + [What is a static array?](#what-is-a-static-array)
     + [When and Where is an Array used?](#when-and-where-is-an-array-used)
     + [Complexity](#complexity)
-      - [Static Array](#static-array)
-      - [Dynamic Array](#dynamic-array)
-  * [Q: How can we implement a dynamic array?](#q-how-can-we-implement-a-dynamic-array)
+  * [What is a static array?](#what-is-a-static-array)
+    + [Static Array Example](#static-array-example)
+  * [What is a Dynamic Array?](#what-is-a-dynamic-array)
+    + [Q: How can we implement a dynamic array?](#q-how-can-we-implement-a-dynamic-array)
+    + [Dynamic Array Example](#dynamic-array-example)
   * [Dynamic Array implementation details](#dynamic-array-implementation-details)
   * [Code Implementation](#code-implementation)
+---
 ## Discussion and Examples about arrays
-
-### What is a static array?
-**A static array** is a fixed length container containing `n` elements indexed from the range `[0, n-1]`.
-
-**Q: What is meant by `indexed`?**
->A: This is means that each slot/index in the array can be referenced with a number.
-
 ### When and Where is an Array used?
 - Sorting and accessing sequential data.
 - Temporarily storing objects.
@@ -32,7 +27,13 @@
 | **Static Array** | O(1) | O(n) | N/A | N/A | N/A |
 | **Dynamic Array**| O(1) | O(n) | O(n) | O(1) | O(n) |
 
-#### Static Array
+## What is a static array?
+**A static array** is a fixed length container containing `n` elements indexed from the range `[0, n-1]`.
+
+**Q: What is meant by `indexed`?**
+>A: This is means that each slot/index in the array can be referenced with a number.
+
+### Static Array Example
 
 ```
     ╔════╦════╦════╦════╦═══╦═══╦═══╦═══╦═════╗
@@ -53,7 +54,7 @@ Array indexing is **zero-based**, meaning the first element is found position ze
 - A[9] => index out of bounds!
 ```
 
-#### Dynamic Array
+## What is a Dynamic Array?
 The dynamic array can **grow** and **shrink** in size.
 
 ```
@@ -74,12 +75,13 @@ A.remove(4) A = ║ 34 ║ -7 ║ 4 ║
                 ╚════╩════╩═══╝
 ```
 
-## Q: How can we implement a dynamic array?
+### Q: How can we implement a dynamic array?
 **A: One way is to use a static array!**
 1. Create a static array with an initial capacity.
 2. Add elements to the underlying static array, keeping track of the number of elements.
 3. If adding another element will exceed the capacity, then create a new static array with twice the capacity and copy the original elements into it.
 
+### Dynamic Array Example
 **Suppose we create a dynamic array with an initial capacity of two and then begin adding elements to it.**
 
 ```
