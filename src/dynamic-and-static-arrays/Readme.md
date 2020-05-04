@@ -80,7 +80,7 @@ A.remove(4) A = ║ 34 ║ -7 ║ 4 ║
 2. Add elements to the underlying static array, keeping track of the number of elements.
 3. If adding another element will exceed the capacity, then create a new static array with twice the capacity and copy the original elements into it.
 
-** Suppose we create a dynamic array with an initial capacity of two and then begin adding elements to it.
+**Suppose we create a dynamic array with an initial capacity of two and then begin adding elements to it.**
 
 ```
 ╔═══╦═══╗ 
