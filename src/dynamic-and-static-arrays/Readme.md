@@ -1,13 +1,15 @@
 # Dynamic And Static Arrays
 
-- [Discussion and Examples about arrays](#discussion-and-examples-about-arrays)
-    - [What is an array?](#what-is-a-static-array)
-    - [When and Where is an Array used?](#when-and-where-is-an-array-used)
-    - [Complexity](#complexity)
-    - [Static array usage example](#static-array-usage-example)
-- [Dynamic Array implementation details](#dynamic-and-static-arrays)
-- [Code Implementation](#code-implementation)
-
+- [Dynamic And Static Arrays](#dynamic-and-static-arrays)
+  * [Discussion and Examples about arrays](#discussion-and-examples-about-arrays)
+    + [What is a static array?](#what-is-a-static-array)
+    + [When and Where is an Array used?](#when-and-where-is-an-array-used)
+    + [Complexity](#complexity)
+      - [Static Array](#static-array)
+      - [Dynamic Array](#dynamic-array)
+  * [Q: How can we implement a dynamic array?](#q-how-can-we-implement-a-dynamic-array)
+  * [Dynamic Array implementation details](#dynamic-array-implementation-details)
+  * [Code Implementation](#code-implementation)
 ## Discussion and Examples about arrays
 
 ### What is a static array?
@@ -51,7 +53,58 @@ Array indexing is **zero-based**, meaning the first element is found position ze
 - A[9] => index out of bounds!
 ```
 
-### Static array usage example
+#### Dynamic Array
+The dynamic array can **grow** and **shrink** in size.
+
+```
+    ╔════╦═══╗
+A = ║ 34 ║ 4 ║
+    ╚════╩═══╝
+
+              ╔════╦═══╦════╗
+A.add(-7) A = ║ 34 ║ 4 ║ -7 ║
+              ╚════╩═══╩════╝
+
+              ╔════╦═══╦════╦════╗
+A.add(34) A = ║ 34 ║ 4 ║ -7 ║ 34 ║
+              ╚════╩═══╩════╩════╝
+
+                ╔════╦════╦═══╗
+A.remove(4) A = ║ 34 ║ -7 ║ 4 ║
+                ╚════╩════╩═══╝
+```
+
+## Q: How can we implement a dynamic array?
+**A: One way is to use a static array!**
+1. Create a static array with an initial capacity.
+2. Add elements to the underlying static array, keeping track of the number of elements.
+3. If adding another element will exceed the capacity, then create a new static array with twice the capacity and copy the original elements into it.
+
+** Suppose we create a dynamic array with an initial capacity of two and then begin adding elements to it.
+
+```
+╔═══╦═══╗ 
+║ ∅ ║ ∅ ║
+╚═══╩═══╝
+╔═══╦═══╗
+║ 7 ║ ∅ ║
+╚═══╩═══╝ 
+╔═══╦════╗
+║ 7 ║ -9 ║
+╚═══╩════╝
+╔═══╦════╦═══╦═══╗
+║ 7 ║ -9 ║ 3 ║ ∅ ║
+╚═══╩════╩═══╩═══╝
+╔═══╦════╦═══╦════╗
+║ 7 ║ -9 ║ 3 ║ 12 ║
+╚═══╩════╩═══╩════╝
+╔═══╦════╦═══╦════╦═══╦═══╦═══╦═══╗
+║ 7 ║ -9 ║ 3 ║ 12 ║ 5 ║ ∅ ║ ∅ ║ ∅ ║
+╚═══╩════╩═══╩════╩═══╩═══╩═══╩═══╝
+╔═══╦════╦═══╦════╦═══╦════╦═══╦═══╗
+║ 7 ║ -9 ║ 3 ║ 12 ║ 5 ║ -6 ║ ∅ ║ ∅ ║
+╚═══╩════╩═══╩════╩═══╩════╩═══╩═══╝
+```
 
 ## Dynamic Array implementation details
 ## Code Implementation
