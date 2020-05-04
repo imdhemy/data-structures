@@ -1,8 +1,3 @@
-<style type="text/css">
-  .error{
-    color: red
-  }
-</style>
 # Dynamic And Static Arrays
 
 - [Discussion and Examples about arrays](#discussion-and-examples-about-arrays)
@@ -48,46 +43,13 @@ A = ╠════╬════╬════╬════╬═══╬�
 Elements in A are referenced by their index. There is no other way to access elements in an array. 
 Array indexing is **zero-based**, meaning the first element is found position zero.
 
-- A[0] => 44
-- A[1] => 12
-- A[4] => 6
-- A[7] => 9
-- A[9] => <span class="error">index out of bounds!</span>
-
-
-<div class="text-white bg-blue mb-2">
-  .text-white on .bg-blue
-</div>
-<div class="bg-blue-light mb-2">
-  .text-gray-dark on .bg-blue-light
-</div>
-<div class="text-white bg-red mb-2">
-  .text-white on .bg-red
-</div>
-<div class="text-red bg-red-light mb-2">
-  .text-red on .bg-red-light
-</div>
-<div class="bg-green-light mb-2">
-  .text-gray-dark on .bg-green-light
-</div>
-<div class="bg-yellow-dark mb-2">
-  .text-gray-dark on .bg-yellow-dark
-</div>
-<div class="bg-yellow mb-2">
-  .text-gray-dark on .bg-yellow
-</div>
-<div class="bg-yellow-light mb-2">
-  .text-gray-dark on .bg-yellow-light
-</div>
-<div class="text-white bg-purple mb-2">
-  .text-white on .bg-purple
-</div>
-<div class="text-white bg-gray-dark mb-2">
-  .text-white on .bg-gray-dark
-</div>
-<div class="bg-gray">
-  .text-gray-dark on .bg-gray
-</div>
+```diff
++ A[0] => 44
++ A[1] => 12
++ A[4] => 6
++ A[7] => 9
+- A[9] => index out of bounds!
+```
 
 ### Static array usage example
 
