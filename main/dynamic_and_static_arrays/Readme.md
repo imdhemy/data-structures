@@ -108,5 +108,5 @@ A.remove(4) A = ║ 34 ║ -7 ║ 4 ║
 ```
 
 ## Dynamic Array Code
-- [Array.java](Array.java)
-- [ArrayTest.java](../../tests/dynamic_and_static_arrays/ArrayTest.java)
+- [DynamicArray.java](DynamicArray.java)
+- [DynamicArrayTest.java](DynamicArrayTest.java)
