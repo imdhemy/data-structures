@@ -37,4 +37,5 @@
     + [Q: How can we implement a dynamic array?](main/dynamic_and_static_arrays/Readme.md#q-how-can-we-implement-a-dynamic-array)
     + [Dynamic Array Example](main/dynamic_and_static_arrays/Readme.md#dynamic-array-example)
   * [Dynamic Array Code](main/dynamic_and_static_arrays/Readme.md#dynamic-array-code)
- 
+    + [DynamicArray.java](main/dynamic_and_static_arrays/DynamicArray.java)
+    + [DynamicArrayTest.java](tests/dynamic_and_static_arrays/DynamicArrayTest.java)
