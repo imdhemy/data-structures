@@ -71,6 +71,6 @@ a reference to the *head* and the *tail* nodes to do quick removals and addition
 
 ## Source Code
 - [SinglyLinkedList](SinglyLinkedList.java)
-    + [SinglyLinkedListTest](/../tests/linked_list/SinglyLinkedListTest.java)
+    + [SinglyLinkedListTest](./../../tests/linked_list/SinglyLinkedListTest.java)
 - [DoublyLinkedList](DoublyLinkedList.java)
-    + [DoublyLinkedListTest](/../tests/linked_list/DoublyLinkedListTest.java)
+    + [DoublyLinkedListTest](./../../tests/linked_list/DoublyLinkedListTest.java)
