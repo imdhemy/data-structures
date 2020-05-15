@@ -1,4 +1,4 @@
-package dynamic_and_static_arrays;
+package dynamic_and_static_array;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

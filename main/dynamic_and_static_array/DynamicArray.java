@@ -1,4 +1,4 @@
-package dynamic_and_static_arrays;
+package dynamic_and_static_array;
 
 /**
  * @param <T>
