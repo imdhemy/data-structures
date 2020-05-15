@@ -92,7 +92,10 @@ public class DynamicArray<T> {
    * @param element the element to be removed
    * @return {@code true} if removed
    */
-  public boolean remove(T element) {
+  public boolean remove(T element) throws Exception {
+    if (isEmpty()) {
+      throw new Exception("The list is empty");
+    }
     int index = indexOf(element);
     if (index == -1) {
       return false;

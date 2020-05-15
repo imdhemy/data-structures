@@ -54,7 +54,7 @@ public class DynamicArrayTest {
   }
 
   @Test
-  public void test_it_can_remove_an_element() {
+  public void test_it_can_remove_an_element() throws Exception {
     DynamicArray<String> list = new DynamicArray<>();
     String[] elements = {"a", "b", "c"};
     for (String element : elements) {
@@ -68,7 +68,7 @@ public class DynamicArrayTest {
   }
 
   @Test
-  public void test_get_false_if_it_removes_unlisted_element() {
+  public void test_get_false_if_it_removes_unlisted_element() throws Exception {
     DynamicArray<String> list = new DynamicArray<>();
     String[] elements = {"a", "b", "c"};
     for (String element : elements) {
@@ -80,7 +80,7 @@ public class DynamicArrayTest {
   }
 
   @Test
-  public void test_get_negative_index_if_element_was_removed() {
+  public void test_get_negative_index_if_element_was_removed() throws Exception {
     DynamicArray<String> list = new DynamicArray<>();
     String[] elements = {"a", "b", "c"};
     for (String element : elements) {
@@ -88,5 +88,23 @@ public class DynamicArrayTest {
     }
     list.remove("a");
     assertEquals(-1, list.indexOf("a"));
+  }
+
+  @Test(expected = Exception.class)
+  public void test_it_throws_exception_on_remove_from_empty_list() throws Exception {
+    DynamicArray<String> list = new DynamicArray<>();
+    list.remove("A");
+  }
+
+  @Test(expected = Exception.class)
+  public void test_it_throws_exception_on_remove_when_the_list_become_empty() throws Exception {
+    DynamicArray<String> list = new DynamicArray<>();
+    list.add("A");
+    list.add("B");
+    list.add("C");
+    list.remove("A");
+    list.remove("B");
+    list.remove("C");
+    list.remove("D");
   }
 }
