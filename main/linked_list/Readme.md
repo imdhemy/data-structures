@@ -47,6 +47,7 @@ a reference to the *head* and the *tail* nodes to do quick removals and addition
 | **Doubly Linked List** | <ul><li>Can be traversed backwards</li></ul> | <ul><li>Takes 2x memory</li></ul> | <ul><li> |
 
 ## Implementation Details
+//TODO: Add Implementation Details
 
 ## complexity Analysis
 |  Operation | Singly Linked List | Doubly Linked List |
