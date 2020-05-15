@@ -20,3 +20,13 @@
   * [Dynamic Array Code](main/dynamic_and_static_array/Readme.md#dynamic-array-code)
     + [DynamicArray.java](main/dynamic_and_static_array/DynamicArray.java)
     + [DynamicArrayTest.java](tests/dynamic_and_static_array/DynamicArrayTest.java)
+- [Linked List](main/dynamic_and_static_array/Readme.md#linked-list)
+  * [Definition](main/dynamic_and_static_array/Readme.md#definition)
+  * [Where are linked lists used?](main/linked_list/Readme.md#where-are-linked-lists-used)
+  * [Terminology](main/linked_list/Readme.md#terminology)
+  * [Singly vs Doubly linked lists](main/linked_list/Readme.md#singly-vs-doubly-linked-lists)
+  * [Singly and Doubly Linked lists Pros and Cons](main/linked_list/Readme.md#singly-and-doubly-linked-lists-pros-and-cons)
+  * [Implementation Details](main/linked_list/Readme.md#implementation-details)
+  * [complexity Analysis](main/linked_list/Readme.md#complexity-analysis)
+  * [Source Code](main/linked_list/Readme.md#source-code)
+  

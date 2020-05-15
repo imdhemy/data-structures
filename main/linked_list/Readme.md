@@ -1,5 +1,15 @@
 # Linked List
 
+- [Linked List](#linked-list)
+  * [Definition](#definition)
+  * [Where are linked lists used?](#where-are-linked-lists-used)
+  * [Terminology](#terminology)
+  * [Singly vs Doubly linked lists](#singly-vs-doubly-linked-lists)
+  * [Singly and Doubly Linked lists Pros and Cons](#singly-and-doubly-linked-lists-pros-and-cons)
+  * [Implementation Details](#implementation-details)
+  * [complexity Analysis](#complexity-analysis)
+  * [Source Code](#source-code)
+  
 ![linked-list](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
 
 ## Definition
@@ -40,7 +50,7 @@ a reference to the *head* and the *tail* nodes to do quick removals and addition
 
 ![doubly-linked-list](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png)
 
-## Singly & Doubly Linked lists Pros and Cons
+## Singly and Doubly Linked lists Pros and Cons
 | Type | Pros | Cons |
 | --- | --- | --- |
 | **Singly Linked List** | <ul><li>Uses less memory</li> <li>Simpler implementation</li></ul> | <ul><li>Can not easily access previous elements</li></ul>|
