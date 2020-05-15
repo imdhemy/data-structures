@@ -10,10 +10,10 @@
   * [complexity Analysis](#complexity-analysis)
   * [Source Code](#source-code)
   
-![linked-list](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
-
 ## Definition
 A linked list is a sequential list of nodes that hold data which points to other nodes also containing data.
+
+![linked-list](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
 
 ## Where are linked lists used?
 
