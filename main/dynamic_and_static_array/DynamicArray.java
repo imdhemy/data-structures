@@ -121,4 +121,6 @@ public class DynamicArray<T> {
     size--;
     list = newList;
   }
+
+  // TODO: implement get method
 }

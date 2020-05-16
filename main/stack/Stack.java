@@ -8,6 +8,7 @@ public class Stack<T> implements Iterable {
 
   private int size;
 
+  // TODO: replace ArrayList with DynamicArray
   private ArrayList<T> list;
 
   public Stack() {
