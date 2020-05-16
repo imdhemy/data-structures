@@ -45,7 +45,7 @@ For bracket in bracket_string:
     rev = getReversedBracket(bracket)
     If isLeftBracket(bracket):
         S.push(bracket)
-    Else If S.isEmpty() o S.pop != rev:
+    Else If S.isEmpty() or S.pop != rev:
         return false // invalid
 return S.isEmpty() // valid if s is empty
 ```
