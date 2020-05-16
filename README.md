@@ -29,4 +29,9 @@
   * [Implementation Details](main/linked_list/Readme.md#implementation-details)
   * [complexity Analysis](main/linked_list/Readme.md#complexity-analysis)
   * [Source Code](main/linked_list/Readme.md#source-code)
+- [Stack](main/stack/Readme.md#stack)
+  * [When and where is a stack used?](main/stack/Readme.md#when-and-where-is-a-stack-used)
+  * [Complexity Analysis](main/stack/Readme.md#complexity-analysis)
+  * [Example - Brackets](main/stack/Readme.md#example---brackets)
+  * [Stack Implementation](main/stack/Readme.md#stack-implementation)
   

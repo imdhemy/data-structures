@@ -1,4 +1,11 @@
 # Stack
+
+- [Stack](#stack)
+  * [When and where is a stack used?](#when-and-where-is-a-stack-used)
+  * [Complexity Analysis](#complexity-analysis)
+  * [Example - Brackets](#example---brackets)
+  * [Stack Implementation](#stack-implementation)
+
 A stack is a one-ended linear data structure which models a real world stack by having two
 primary operations, namely **push** and **pop**.
 
@@ -46,6 +53,6 @@ return S.isEmpty() // valid if s is empty
 - [Brackets.java](Brackets.java)
 - [BracketsTest.java](./../../tests/stack/BracketsTest.java)
 
-# Stack Implementation
+## Stack Implementation
 - [Stack.java](Stack.java)
 - [StackTest.java](./../../tests/stack/StackTest.java)
