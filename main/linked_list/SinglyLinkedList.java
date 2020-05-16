@@ -1,9 +1,10 @@
 package linked_list;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 @SuppressWarnings({"unchecked", "rawtypes"})
-public class SinglyLinkedList<T> {
+public class SinglyLinkedList<T> implements Iterable<T> {
 
   /**
    * list size
@@ -211,6 +212,25 @@ public class SinglyLinkedList<T> {
       node = node.getNext();
     }
     return elements.toString();
+  }
+
+  @Override
+  public Iterator<T> iterator() {
+    return new Iterator<T>() {
+      private Node<T> iterator = head;
+
+      @Override
+      public boolean hasNext() {
+        return iterator != null;
+      }
+
+      @Override
+      public T next() {
+        T data = iterator.getData();
+        iterator = iterator.getNext();
+        return data;
+      }
+    };
   }
 
   /**

@@ -1,9 +1,12 @@
 package linked_list;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -191,5 +194,17 @@ public class SinglyLinkedListTest {
     assertEquals(0, list.indexOf(null));
     list.remove(null);
     assertEquals(-1, list.indexOf(null));
+  }
+
+  @Test
+  public void it_is_iterable() {
+    list.add("a");
+    list.add("b");
+    list.add("c");
+    ArrayList<String> items = new ArrayList<>();
+    for (String item : list) {
+      items.add(item);
+    }
+    assertArrayEquals(Arrays.asList("a", "b", "c").toArray(), items.toArray());
   }
 }
