@@ -3,6 +3,7 @@ package stack;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+@SuppressWarnings("rawtypes")
 public class Stack<T> implements Iterable {
 
   private int size;
