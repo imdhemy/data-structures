@@ -38,6 +38,6 @@
   * [When and where is a queue used?](main/queue/README.md#when-and-where-is-a-queue-used)
   * [Complexity Analysis](main/queue/README.md#complexity-analysis)
   * [Example - BFS](main/queue/README.md#example---bfs)
-- [Queue Implementation](main/queue/README.md#queue-implementation)
+  * [Queue Implementation](main/queue/README.md#queue-implementation)
 
   
