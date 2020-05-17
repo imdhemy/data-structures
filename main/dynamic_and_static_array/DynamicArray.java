@@ -32,7 +32,6 @@ public class DynamicArray<T> {
     size = 0;
   }
 
-
   /**
    * checks if list is empty
    *
@@ -40,6 +39,15 @@ public class DynamicArray<T> {
    */
   public boolean isEmpty() {
     return size == 0;
+  }
+
+  /**
+   * Get list size
+   *
+   * @return get list size
+   */
+  public int getSize() {
+    return size;
   }
 
   /**
@@ -55,22 +63,13 @@ public class DynamicArray<T> {
   }
 
   /**
-   * Expands internal list capacity
-   */
-  private void expandListCapacity() {
-    capacity *= 2;
-    T[] doubleSizedList = (T[]) new Object[capacity];
-    System.arraycopy(list, 0, doubleSizedList, 0, size);
-    list = doubleSizedList;
-  }
-
-  /**
-   * Get list size
+   * Get element by index
    *
-   * @return get list size
+   * @param index the index to look for
+   * @return the value stored in the specified index
    */
-  public int getSize() {
-    return size;
+  public T get(int index) {
+    return list[index];
   }
 
   /**
@@ -106,7 +105,6 @@ public class DynamicArray<T> {
     return true;
   }
 
-
   /**
    * removes the element at the specified index
    *
@@ -136,18 +134,18 @@ public class DynamicArray<T> {
     return newList;
   }
 
-  /**
-   * Get element by index
-   *
-   * @param index the index to look for
-   * @return the value stored in the specified index
-   */
-  public T get(int index) {
-    return list[index];
-  }
-
   @Override
   public String toString() {
     return Arrays.toString(Arrays.copyOf(list, size));
+  }
+
+  /**
+   * Expands internal list capacity
+   */
+  private void expandListCapacity() {
+    capacity *= 2;
+    T[] doubleSizedList = (T[]) new Object[capacity];
+    System.arraycopy(list, 0, doubleSizedList, 0, size);
+    list = doubleSizedList;
   }
 }
