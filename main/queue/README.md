@@ -1,5 +1,12 @@
 # Queues
 
+- [Queues](#queues)
+  * [When and where is a queue used?](#when-and-where-is-a-queue-used)
+  * [Complexity Analysis](#complexity-analysis)
+  * [Example - BFS](#example---bfs)
+- [Queue Implementation](#queue-implementation)
+
+
 A queue is a linear data structure which models real world queues by having two primary operations,
 namely enqueue and dequeue.
 
@@ -37,4 +44,4 @@ starting_node.visited = true
 
 # Queue Implementation
 - [Queue.java](Queue.java)
-- [QueueTest.java](QueueTest.java)
+- [QueueTest.java](../../tests/queue/QueueTest.java)
