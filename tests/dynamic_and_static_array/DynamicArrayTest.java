@@ -107,4 +107,15 @@ public class DynamicArrayTest {
     list.remove("C");
     list.remove("D");
   }
+
+  @Test
+  public void test_it_can_element_by_index() {
+    DynamicArray<String> list = new DynamicArray<>();
+    list.add("A");
+    list.add("B");
+    list.add("C");
+    assertEquals("A", list.get(0));
+    assertEquals("B", list.get(1));
+    assertEquals("C", list.get(2));
+  }
 }

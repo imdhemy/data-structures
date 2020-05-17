@@ -1,5 +1,7 @@
 package dynamic_and_static_array;
 
+import java.util.Arrays;
+
 /**
  * @param <T>
  */
@@ -104,12 +106,25 @@ public class DynamicArray<T> {
     return true;
   }
 
+
   /**
    * removes the element at the specified index
    *
    * @param remIndex the index to be removed
    */
-  private void removeAt(int remIndex) {
+  public T removeAt(int remIndex) throws Exception {
+    if (remIndex < 0 || remIndex > size - 1) {
+      throw new Exception(String.format("%d is out of bounds of length %d", remIndex, size));
+    }
+
+    T element = list[remIndex];
+    list = removeElementAt(remIndex);
+    size--;
+
+    return element;
+  }
+
+  private T[] removeElementAt(int remIndex) {
     T[] newList = (T[]) new Object[capacity];
     for (int index = 0, newIndex = 0; index < size; index++, newIndex++) {
       if (index == remIndex) {
@@ -118,9 +133,21 @@ public class DynamicArray<T> {
         newList[newIndex] = list[index];
       }
     }
-    size--;
-    list = newList;
+    return newList;
   }
 
-  // TODO: implement get method
+  /**
+   * Get element by index
+   *
+   * @param index the index to look for
+   * @return the value stored in the specified index
+   */
+  public T get(int index) {
+    return list[index];
+  }
+
+  @Override
+  public String toString() {
+    return Arrays.toString(Arrays.copyOf(list, size));
+  }
 }

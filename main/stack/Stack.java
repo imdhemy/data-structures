@@ -1,6 +1,6 @@
 package stack;
 
-import java.util.ArrayList;
+import dynamic_and_static_array.DynamicArray;
 import java.util.Iterator;
 
 @SuppressWarnings("rawtypes")
@@ -8,12 +8,11 @@ public class Stack<T> implements Iterable {
 
   private int size;
 
-  // TODO: replace ArrayList with DynamicArray
-  private ArrayList<T> list;
+  private DynamicArray<T> list;
 
   public Stack() {
     size = 0;
-    list = new ArrayList<>();
+    list = new DynamicArray<>();
   }
 
   public boolean isEmpty() {
@@ -29,7 +28,7 @@ public class Stack<T> implements Iterable {
     if (isEmpty()) {
       throw new Exception("The stack is empty");
     }
-    return list.remove(--size);
+    return list.removeAt(--size);
   }
 
   public int getSize() {

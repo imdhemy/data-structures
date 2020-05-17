@@ -12,6 +12,7 @@ import java.util.ListIterator;
 import org.junit.Before;
 import org.junit.Test;
 
+@SuppressWarnings("rawtypes")
 public class StackTest {
 
   private Stack<String> stack;
@@ -119,5 +120,14 @@ public class StackTest {
     stack.push("b");
     stack.push("c");
     assertEquals(-1, stack.indexOf("z"));
+  }
+
+  @Test
+  public void it_can_store_integers() throws Exception {
+    Stack<Integer> intList = new Stack<>();
+    intList.push(1);
+    intList.push(2);
+    assertEquals(2, (int) intList.pop());
+    assertEquals(1, (int) intList.pop());
   }
 }
